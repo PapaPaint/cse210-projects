@@ -1,14 +1,16 @@
+using System;
+
 public abstract class Pet
 {
-    protected string _name;
-    protected int _age;
-    protected float _weight;
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public float Weight { get; set; }
 
     public Pet(string name, int age, float weight)
     {
-        _name = name;
-        _age = age;
-        _weight = weight;
+        Name = name;
+        Age = age;
+        Weight = weight;
     }
 
     public abstract string GetDetails();
